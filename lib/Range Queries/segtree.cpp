@@ -1,3 +1,5 @@
+int n;
+int seg[4*MAXN];
 int query(int lq, int rq, int idx=1, int l=1, int r=n)
 {
     if (r < lq || l > rq) return 0; // NEUTRO

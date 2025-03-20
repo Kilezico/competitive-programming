@@ -1,3 +1,5 @@
+int n;
+int bit[MAXN];
 ll query(int x)
 {
     ll soma = 0;
