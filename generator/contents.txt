@@ -12,24 +12,25 @@ Graphs/kruskal.cpp,Kruskal (Minimum Spanning Tree)
 Graphs/prim.cpp,Prim (Minimum Spanning Tree)
 
 [DP]
-DP/digit_dp.cpp
-DP/lcs.cpp
-DP/lis.cpp
-
-[Geometry]
-Geometry/convex_hull.cpp
-Geometry/point.cpp
+DP/digit_dp.cpp,Digit DP
+DP/lcs.cpp,Longest Common Subsequence (LCS)
+DP/lis.cpp,Longest Increasing Subsequence (LIS)
 
 [Number Theory]
-Number Theory/comb.cpp
-Number Theory/matrix.cpp
-Number Theory/number_theory.cpp
+Number Theory/number_theory.cpp,Primes and Divisors
+Number Theory/comb.cpp,Combinations
+Number Theory/matrix.cpp,Matrix
+Number Theory/sieves.cpp,Sieve of Eratosthenes
 
 [Range Queries]
-Range Queries/bit.cpp
-Range Queries/ps2d.cpp
-Range Queries/segtree.cpp
+Range Queries/bit.cpp,Fenwick Tree (BIT)
+Range Queries/ps2d.cpp, 2D Prefix Sum
+Range Queries/segtree.cpp, Segment Tree
 
 [Strings]
-Strings/hashing.cpp
-Strings/trie.cpp
+Strings/hashing.cpp, String Hashing
+Strings/trie.cpp, Trie
+
+[Geometry]
+Geometry/convex_hull.cpp, Convex HULL
+Geometry/point.cpp, Point structure

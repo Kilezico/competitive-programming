@@ -1,5 +1,5 @@
 bool isPrime[LIM];
-vector<int> SievePrimes()
+vector<int> Sieve_Eratosthenes()
 {
     for (int i=2; i<LIM; i++) isPrime[i] = true;
     isPrime[0] = isPrime[1] = false;
