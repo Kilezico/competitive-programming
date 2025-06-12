@@ -11,7 +11,7 @@ void build_PS2D(int n, int m)
     
 }
 
-int query(int i, int j)
+int query(int i0, int j0, int i, int j)
 {
-    return ps[i][j] - ps[i-1][j] - ps[i][j-1] + ps[i-1][j-1];
+    return ps[i][j] - ps[i0-1][j] - ps[i][j0-1] + ps[i0-1][j0-1];
 }
