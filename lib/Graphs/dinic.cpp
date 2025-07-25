@@ -4,17 +4,19 @@ Algoritmo de Dinic
     - Complexidade: O(V*V*E)
 */
 
-template <typename T> struct Edge {
-    int u, v; // u -> v
-    T cap, flow=0;
-    Edge(int from, int to, T cap) : u(from), v(to), cap(cap) {}
-};
-template <typename T> struct Dinic {
+template <typename T>
+struct Dinic {
+    struct Edge {
+        int u, v; // u -> v
+        T cap, flow=0;
+        Edge(int from, int to, T cap) : u(from), v(to), cap(cap) {}
+    };
+
     int n, s, t;
-    const T inf = 1e17;
+    const T inf = numeric_limits<T>::max();
     vector<vector<int>> adj;
     vector<int> dist, nxt;
-    vector<Edge<T>> edges; // {destino, capacidade}
+    vector<Edge> edges;
 
     Dinic(int n, int s, int t) : n(n), s(s), t(t)
     {
