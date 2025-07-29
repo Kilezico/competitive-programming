@@ -7,13 +7,14 @@ void dfs(int u, int p)
 {
     tin[u] = timer++;
 
+    up[u][0] = p;
     for (int i=1; i<BITS; i++) {
         up[u][i] = up[up[u][i-1]][i-1]; // Avô é o pai do pai.
     }
 
     for (int v: grafo[u]) {
         if (v != p) {
-            dfs(v);
+            dfs(v, u);
         }
     }
 
