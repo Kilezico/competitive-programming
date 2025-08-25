@@ -13,7 +13,7 @@ struct SegPersistente {
     }
     ll merge(ll a, ll b)
     {
-        a + b;
+        return a + b;
     }
     int build(int l, int r)
     {
